@@ -303,14 +303,21 @@ uni_var_2020
     ## Multiple R-squared:  0.05064,    Adjusted R-squared:  0.04931 
     ## F-statistic: 38.08 on 1 and 714 DF,  p-value: 1.136e-09
 
-{Most variables are highly significant, with p-values less than 0.001,
-except for variable 6, which is not statistically significant due to
-having the p-value 0.249. Variables 4, 5, and 7 show that the
-independent variable had a very small impact on the NDVI. The highest
-influence on the NDVI was found in variable 4 (42.73%), while the lowest
-is in variable 6 (0.186%) meaning variables 1, 4, 5, and 6 had a
-positive effect on the NDVI, whereas variables 2, 3, and 6 had a
-negative effect on the NDVI.}
+{Most variables are highly significant (NDVI, max temp, min temp, rain,
+population, and elevation), with p-values less than 0.001, except for
+variable 6 (Water in 2020), which is not statistically significant due
+to having the p-value 0.249. Rain, population, and elevation show that
+the independent variable had a very small impact on the NDVI. The
+highest influence on the NDVI was found in the rain variable with a r
+squared of 0.4273 or (42.73%), while the lowest is in the water in 2020
+variable with a r squared of 0.001862 or (0.186%). This data shows that
+the variables with higher r squared percentages fit the regression model
+better than the variables with a lower r squared percentage. So, the
+higher r squared values (observed in the NDVI, max temp, min temp, rain,
+population) means there is less variation between observed data in the
+fitted values where as a lower r squared value (observed in the water
+2020 and elevation) means there was bigger differences or more variation
+between data and the fit.
 
 **Question 5** *Create a multivariate regression model with the
 variables of interest, choosing EITHER max or min temperature (but not
@@ -432,7 +439,10 @@ good fit. There are slight deviations in normality, with a longer left
 tail and a few outliers on both sides. The presence of outliers suggests
 the model might have difficulty handling extreme cases but the residual
 clustering outcome indacates an overall good performance for the
-majority of observations.}
+majority of observations.The outliers on the map are represented by the
+red and green dots because they reflect the ranges furthest from zero.
+These outliers are mostly present in coastal areas and could be affected
+by human or environmental factors.}
 
 **Question 8** *Assess any issues with multicollinearity or
 heteroskedastity in this model using the techniques shown in class. Run
@@ -490,13 +500,17 @@ diagnostics, do you feel this is a model that provides meaningful
 results? Explain your answer.*
 
 {This model provides meaningful results that can help predict NDVI
-trends the variance of individual variables BUT there are some clear
-inconsistences (specifically around the coast) that could possibly be
-caused by humans or certain environmental factors. The
-heteroskedasticity highlights possible limitations with the standard
-errors and significance tests. This is more a question of their
-accuracy. Adjustments can be made such as using standard errors or
-alternative models which could help support their validity.}
+trends and the variance of individual variables. I found the results of
+the maps to be the most meaningful as a geographer because they
+incorproate the spatial connection between the data and the natural
+enviornment. The outliers on the map highlighted areas of concern or
+possible data inconsistencies. These inconsistences (specifically around
+the coast) could provide insight into possible causes such as humans or
+certain environmental factors. The heteroskedasticity emphasizes
+possible limitations with the standard errors and significance tests.
+This is more a question of their accuracy. Adjustments can be made such
+as using standard errors or alternative models which could help support
+their validity.}
 
 **Disclosure of assistance:** *Besides class materials, what other
 sources of assistance did you use while completing this lab? These can
